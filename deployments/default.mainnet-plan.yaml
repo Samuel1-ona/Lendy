@@ -1,0 +1,46 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://api.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: LenBo_Nft
+            expected-sender: SP7WN55BDBFFN6V423VY0X74PTV2CVF56PZENKTF
+            cost: 13540
+            path: contracts/LenBo_Nft.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: Lendo_Nft
+            expected-sender: SP7WN55BDBFFN6V423VY0X74PTV2CVF56PZENKTF
+            cost: 14450
+            path: contracts/Lendo_Nft.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: Lendx_Nft
+            expected-sender: SP7WN55BDBFFN6V423VY0X74PTV2CVF56PZENKTF
+            cost: 13550
+            path: contracts/Lendx_Nft.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: Lendy
+            expected-sender: SP7WN55BDBFFN6V423VY0X74PTV2CVF56PZENKTF
+            cost: 180310
+            path: contracts/Lendy.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: Lendy_Nft
+            expected-sender: SP7WN55BDBFFN6V423VY0X74PTV2CVF56PZENKTF
+            cost: 13590
+            path: contracts/Lendy_Nft.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.2"

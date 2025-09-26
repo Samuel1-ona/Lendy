@@ -1,0 +1,33 @@
+id: 0
+name: "Mainnet deployment"
+network: mainnet
+stacks-node: "https://api.mainnet.hiro.so"
+bitcoin-node: "https://blockstream.info/api/"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-deploy:
+            contract-name: LenBo_Nft
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 1000000
+        - contract-deploy:
+            contract-name: Lendo_Nft
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 1000000
+        - contract-deploy:
+            contract-name: Lendx_Nft
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 1000000
+        - contract-deploy:
+            contract-name: Lendy_Nft
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 1000000
+        - contract-deploy:
+            contract-name: Lendy
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 2000000
+
+
+
+

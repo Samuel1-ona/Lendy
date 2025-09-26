@@ -1,0 +1,221 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - requirement-publish:
+            contract-id: SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 4680
+            path: "./.cache/requirements/SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait.clar"
+            clarity-version: 1
+      epoch: "2.0"
+    - id: 1
+      transactions:
+        - requirement-publish:
+            contract-id: SP2J933XB2CP2JQ1A4FGN8JA968BBG3NK3EKZ7Q9F.hk-cursor-v2
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP2J933XB2CP2JQ1A4FGN8JA968BBG3NK3EKZ7Q9F: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 64640
+            path: "./.cache/requirements/SP2J933XB2CP2JQ1A4FGN8JA968BBG3NK3EKZ7Q9F.hk-cursor-v2.clar"
+            clarity-version: 2
+        - requirement-publish:
+            contract-id: SP2J933XB2CP2JQ1A4FGN8JA968BBG3NK3EKZ7Q9F.hk-merkle-tree-keccak160-v1
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP2J933XB2CP2JQ1A4FGN8JA968BBG3NK3EKZ7Q9F: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 11000
+            path: "./.cache/requirements/SP2J933XB2CP2JQ1A4FGN8JA968BBG3NK3EKZ7Q9F.hk-merkle-tree-keccak160-v1.clar"
+            clarity-version: 2
+      epoch: "2.4"
+    - id: 2
+      transactions:
+        - requirement-publish:
+            contract-id: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.sip-010-trait-ft-standard-v-1-1
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 4740
+            path: "./.cache/requirements/SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.sip-010-trait-ft-standard-v-1-1.clar"
+            clarity-version: 2
+        - requirement-publish:
+            contract-id: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.token-stx-v-1-2
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 33960
+            path: "./.cache/requirements/SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.token-stx-v-1-2.clar"
+            clarity-version: 2
+        - requirement-publish:
+            contract-id: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-pool-trait-v-1-2
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 18630
+            path: "./.cache/requirements/SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-pool-trait-v-1-2.clar"
+            clarity-version: 2
+        - requirement-publish:
+            contract-id: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-core-v-1-2
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 369760
+            path: "./.cache/requirements/SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-core-v-1-2.clar"
+            clarity-version: 2
+      epoch: "2.5"
+    - id: 3
+      transactions:
+        - requirement-publish:
+            contract-id: SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-registry
+            remap-sender: ST1F7QA2MDF17S807EPA36TSS8AMEFY4KA9TVGWXT
+            remap-principals:
+              SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4: ST1F7QA2MDF17S807EPA36TSS8AMEFY4KA9TVGWXT
+            cost: 112090
+            path: "./.cache/requirements/SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-registry.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token
+            remap-sender: ST1F7QA2MDF17S807EPA36TSS8AMEFY4KA9TVGWXT
+            remap-principals:
+              SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4: ST1F7QA2MDF17S807EPA36TSS8AMEFY4KA9TVGWXT
+            cost: 47590
+            path: "./.cache/requirements/SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-deposit
+            remap-sender: ST1F7QA2MDF17S807EPA36TSS8AMEFY4KA9TVGWXT
+            remap-principals:
+              SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4: ST1F7QA2MDF17S807EPA36TSS8AMEFY4KA9TVGWXT
+            cost: 41510
+            path: "./.cache/requirements/SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-deposit.clar"
+            clarity-version: 3
+      epoch: "3.0"
+    - id: 4
+      transactions:
+        - requirement-publish:
+            contract-id: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.aggregator-core-v-1-1
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 155190
+            path: "./.cache/requirements/SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.aggregator-core-v-1-1.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-pool-sbtc-stx-v-1-1
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 98660
+            path: "./.cache/requirements/SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-pool-sbtc-stx-v-1-1.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-swap-helper-v-1-3
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 171320
+            path: "./.cache/requirements/SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-swap-helper-v-1-3.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.wormhole-traits-v1
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 7070
+            path: "./.cache/requirements/SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.wormhole-traits-v1.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-traits-v1
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 20710
+            path: "./.cache/requirements/SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-traits-v1.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-governance-v2
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 266550
+            path: "./.cache/requirements/SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-governance-v2.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-oracle-v3
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 35980
+            path: "./.cache/requirements/SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-oracle-v3.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-pnau-decoder-v2
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 162850
+            path: "./.cache/requirements/SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-pnau-decoder-v2.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-storage-v3
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 46140
+            path: "./.cache/requirements/SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-storage-v3.clar"
+            clarity-version: 3
+        - requirement-publish:
+            contract-id: SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.wormhole-core-v3
+            remap-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            remap-principals:
+              SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 237610
+            path: "./.cache/requirements/SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.wormhole-core-v3.clar"
+            clarity-version: 3
+      epoch: "3.1"
+    - id: 5
+      transactions:
+        - contract-publish:
+            contract-name: LenBo_Nft_v2
+            expected-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 13540
+            path: contracts/LenBo_Nft.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: Lendo_Nft
+            expected-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 14450
+            path: contracts/Lendo_Nft.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: Lendx_Nft
+            expected-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 13550
+            path: contracts/Lendx_Nft.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: Lendy
+            expected-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 180380
+            path: contracts/Lendy.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: Lendy_Nft
+            expected-sender: STVAH96MR73TP2FZG2W4X220MEB4NEMJHPMVYQNS
+            cost: 13590
+            path: contracts/Lendy_Nft.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.2"

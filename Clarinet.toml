@@ -1,0 +1,70 @@
+[project]
+name = 'Lendy'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+
+[[project.requirements]]
+contract_id = 'SM3VDXK3WZZSA84XXFKAFAF15NNZX32CTSG82JFQ4.sbtc-token'
+
+[[project.requirements]]
+contract_id = 'SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.token-stx-v-1-2'
+
+[[project.requirements]]
+contract_id = 'SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-swap-helper-v-1-3'
+
+[[project.requirements]]
+contract_id = 'SM1793C4R5PZ4NS4VQ4WMP7SKKYVH8JZEWSZ9HCCR.xyk-pool-sbtc-stx-v-1-1'
+
+[[project.requirements]]
+contract_id = 'SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-oracle-v3'
+
+[[project.requirements]]
+contract_id = 'SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-storage-v3'
+
+[[project.requirements]]
+contract_id = 'SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.pyth-pnau-decoder-v2'
+
+[[project.requirements]]
+contract_id = 'SP3R4F6C1J3JQWWCVZ3S7FRRYPMYG6ZW6RZK31FXY.wormhole-core-v3'
+
+[[project.requirements]]
+contract_id = 'SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait'
+[contracts.LenBo_Nft]
+path = 'contracts/LenBo_Nft.clar'
+clarity_version = 3
+epoch = 'latest'
+
+[contracts.Lendo_Nft]
+path = 'contracts/Lendo_Nft.clar'
+clarity_version = 3
+epoch = 'latest'
+
+[contracts.Lendx_Nft]
+path = 'contracts/Lendx_Nft.clar'
+clarity_version = 3
+epoch = 'latest'
+
+[contracts.Lendy]
+path = 'contracts/Lendy.clar'
+clarity_version = 3
+epoch = 'latest'
+
+[contracts.Lendy_Nft]
+path = 'contracts/Lendy_Nft.clar'
+clarity_version = 3
+epoch = 'latest'
+
+[repl.analysis]
+passes = []
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = true
+api_url = 'https://api.hiro.so'
